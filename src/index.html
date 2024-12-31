@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-University Management System</title>
+</head>
+<body>
+    <!-- hamburger menu button -->
+    <div class="header">
+        <div class="header-content">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="header-title">E-University Management System</div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+        <div>AWKUM</div>
+        <img src="./img/logo.png" alt="University Logo">
+        <div class="sidebar-menu">
+            <a href="index.html"><i class="fas fa-dashboard"></i> Dashboard</a>
+            <a href="courses.html"><i class="fas fa-book"></i> My courses</a>
+            <a href="login.html"><i class="fas fa-sign-out"></i> Sign out</a>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-content">
+        <div class="dashboard-header">
+            <div class="header-info">
+                <h2>Good Afternoon</h2>
+                <h3>Ayesha Jehangir</h3>
+                <p>(Department of Computer Science)</p>
+                <a href="profile.html"><button class="view-profile-btn" style="margin-top: 10px;">View Profile</button></a>
+            </div>
+        </div>
+
+        <!-- Notification Section -->
+        <div class="notifications-grid">
+            <div class="notification-box">
+                <div class="notification-title">
+                    <i class="fas fa-bell"></i>
+                    <h3>Notifications by Section(s)</h3>
+                </div>
+                <div class="notification-item">
+                    <a href="#">Interview of PEEF Scholarship for PCS Students</a>
+                    <p>2024-12-26 - Posted by Directorate of Admissions</p>
+                </div>
+                
+                <a href="#">Old archive</a>
+            </div>
+
+            <!-- Dept Notification Section -->
+            <div class="notification-box">
+                <div class="notification-title">
+                    <i class="fas fa-bell"></i>
+                    <h3>Notification by Dept.</h3>
+                </div>
+                <div class="notification-item">
+                    <a href="#">Fee Submission for Spring 2024</a>
+                    <p>2024-02-18</p>
+                </div>
+                <a href="#">Old archive</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fotter => Copyright -->
+    <footer class="footer">
+        <p>© Abdul Wali Khan University Mardan.</p>
+    </footer>
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- JavaScript for Header, SideBar and Login Section => for interactivity -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+</html>

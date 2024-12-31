@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Courses</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="header-title">E-University Management System</div>
+        </div>
+    </div>
+
+    <!-- Add sidebar -->
+    <div class="sidebar">
+        <div>AWKUM</div>
+        <img src="./img/logo.png" alt="University Logo">
+        <div class="sidebar-menu">
+            <a href="index.html"><i class="fas fa-dashboard"></i> Dashboard</a>
+            <a href="courses.html"><i class="fas fa-book"></i> My courses</a>
+            <a href="login.html"><i class="fas fa-sign-out"></i> Sign out</a>
+        </div>
+    </div>
+
+    <!-- Page Heading and link to Home Page-->
+    <div class="main-content">
+        <div class="sessions-container">
+            <div class="cheader">
+                <h1>Sessions</h1>
+                <div  class="cbreadcrumb">
+                <a  href="index.html">Home</a> / Sessions
+                </div>
+            </div>
+
+            <!-- Sessions list -->
+            <div class="sessions-list">
+                <div class="list-header">
+                    <h2>Sessions List</h2>
+                    <button class="register-btn">Register new course</button>
+                </div>
+
+                <!-- Spring Courses -->
+                <div class="sessions-grid">
+                    <div class="session-card">
+                        <div class="calendar-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="session-info">
+                            <h3>2024 Spring</h3>
+                            <p>Total classes: 0 - <a href="#" class="view-details">view details</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Fall Courses -->
+                    <div class="session-card">
+                        <div class="calendar-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="session-info">
+                            <h3>2024 Fall</h3>
+                            <p>Total classes: 5 - <a href="#" class="view-details">view details</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fotter => Copyright -->
+    <footer class="footer">
+        <p>© Abdul Wali Khan University Mardan.</p>
+    </footer>
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+
+</html>

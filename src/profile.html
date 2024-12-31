@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-content">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="header-title">E-University Management System</div>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div>AWKUM</div>
+        <img src="./img/logo.png" alt="University Logo">
+        <div class="sidebar-menu">
+            <a href="index.html"><i class="fas fa-dashboard"></i> Dashboard</a>
+            <a href="courses.html"><i class="fas fa-book"></i> My courses</a>
+            <a href="login.html"><i class="fas fa-sign-out"></i> Sign out</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Page heading -->
+        <div class="container">
+            <h1>Profile</h1>
+
+            <div class="profile-grid">
+                <!-- Left Column  for Profile Image and little details-->
+                <div class="profile-card">
+                    <img src="img/profile.webp" alt="Profile Photo" class="profile-image">
+                    <h2 class="profile-name">Ayesha Jehangir</h2>
+                    <p class="profile-subtitle">S/D/O<br>Jehangir Khan</p>
+                    <a href="#" class="update-photo">Update profile photo ↗</a>
+                    
+                    <div class="stats">
+                        <div class="stats-item">
+                            <span>Subjects</span>
+                            <span>5</span>
+                        </div>
+                        <div class="stats-item">
+                            <span>Deposited fees</span>
+                            <span>73000</span>
+                        </div>
+                        <div class="stats-item">
+                            <span>Downloads</span>
+                            <span>20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column for Student Information-->
+                <div class="profile-card">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">
+                                <span>📧</span>
+                                <span>Email address</span>
+                            </div>
+                            <div class="info-value">demo@gmail.com</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <span>🪪</span>
+                                <span>Registration#</span>
+                            </div>
+                            <div class="info-value">AWKUM-1234567</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <span>📚</span>
+                                <span>Discipline</span>
+                            </div>
+                            <div class="info-value">BCS</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <span>💻</span>
+                                <span>Session</span>
+                            </div>
+                            <div class="info-value">2024</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <span>📍</span>
+                                <span>Address</span>
+                            </div>
+                            <div class="info-value">Green Acres Town, Mardan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fotter => Copyright -->
+    <footer class="footer">
+        <p>© Abdul Wali Khan University Mardan.</p>
+    </footer>
+
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+
+        hamburger.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        });
+    </script>
+</body>
+</html>
